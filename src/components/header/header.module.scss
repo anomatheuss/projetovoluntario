@@ -1,0 +1,142 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  border-bottom: 2px solid grey;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+
+  .boxlogo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    .boxlogo {
+      gap: 0.5rem;
+
+      img {
+        width: 30px;
+        height: auto;
+      }
+
+      a {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  a {
+    font-weight: 500;
+
+    &:nth-child(2) {
+      background-color: #00745a;
+      color: white;
+      border-radius: 8px;
+      padding: 0.6rem 1.3rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #00523f;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 116, 90, 0.4);
+      }
+
+      &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 3px 10px rgba(0, 116, 90, 0.4);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menuCheckbox {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+
+  span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.mobileMenu {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    padding: 1rem 0;
+    gap: 0.5rem;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.8rem 1rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      &:nth-child(2) {
+        background-color: #00745a;
+        color: white;
+        margin: 0 1rem;
+        border-radius: 8px;
+
+        &:hover {
+          background-color: #00523f;
+        }
+      }
+    }
+  }
+}
+
+.menuCheckbox:checked ~ .mobileMenu {
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}

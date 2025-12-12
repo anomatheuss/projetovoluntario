@@ -1,0 +1,378 @@
+.icon {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+
+  span {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    gap: 0.5rem;
+    background-color: #e5e5e5;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    span {
+      font-size: 0.85rem;
+      padding: 0.25rem 0.6rem;
+    }
+  }
+}
+
+.title {
+  font-size: 4rem;
+  padding: 0rem 4rem 2rem;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    padding: 0rem 1rem 1rem;
+  }
+}
+
+p {
+  width: 80%;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  margin: 0rem 4rem 2rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0rem 1rem 1.5rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-left: 4rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+.btnPrimary {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  background-color: #00745a;
+  padding: 0.8rem 1.2rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #00523f;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 116, 90, 0.4);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 116, 90, 0.4);
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
+.btnSecondary {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #00745a;
+  background-color: white;
+  padding: 0.8rem 1.5rem 0.8rem;
+  border-radius: 8px;
+  border: solid 1.5px #00745a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #00745a;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 116, 90, 0.3);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 116, 90, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
+.image {
+  flex: 1;
+  min-width: 400px;
+  
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 520px;
+  }
+
+  @media (max-width: 768px) {
+    min-width: unset;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    img {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.containerDiv {
+  flex: 1;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    min-width: unset;
+    width: 100%;
+  }
+}
+
+.greenbox {
+  background-color: #00745a;
+  width: 100%;
+
+  .box {
+    margin-top: 3rem;
+    padding: 2rem 2rem;
+
+    h1 {
+      color: white;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-top: 4rem;
+      margin-left: 2rem;
+    }
+
+    p {
+      width: auto;
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      margin-bottom: 0rem;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 1.5rem;
+      padding: 1rem;
+
+      h1 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .maincards {
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 4rem;
+
+    .card {
+      flex: 1;
+      width: auto;
+      height: 242px;
+      border: 1px solid white;
+      border-radius: 14px;
+      text-align: center;
+      margin-bottom: 3rem;
+
+      h2 {
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: white;
+        width: auto;
+        padding: 0rem 2rem 2rem;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 1.5rem 1rem;
+      gap: 1rem;
+
+      .card {
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+        margin-bottom: 0;
+        padding: 1rem 0;
+
+        h2 {
+          font-size: 1.3rem;
+          margin-top: 1.5rem;
+          margin-bottom: 0.8rem;
+        }
+
+        p {
+          font-size: 1rem;
+          padding: 0rem 1.5rem 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.containerbottom {
+  width: 100%;
+  
+  .mainbox {
+    margin-top: 3rem;
+    padding: 2rem 2rem;
+    
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-top: 3rem;
+      margin-left: 2rem;
+    }
+    
+    p {
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      margin-bottom: 0rem;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 1.5rem;
+      padding: 1rem;
+
+      h2 {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  
+  .maincards2 {
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 4rem;
+
+    .card2 {
+      flex: 1;
+      width: auto;
+      height: 242px;
+      border: 1px solid #000000;
+      border-radius: 14px;
+      text-align: center;
+      margin-bottom: 3rem;
+
+      h3 {
+        font-size: 2.5rem;
+        color: #00745a;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+      }
+      
+      p {
+        font-size: 1.2rem;
+        width: auto;
+        padding: 0rem 1rem 1rem;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 1.5rem 1rem;
+      gap: 1rem;
+
+      .card2 {
+        width: 100%;
+        height: auto;
+        min-height: 150px;
+        margin-bottom: 0;
+        padding: 1rem 0;
+
+        h3 {
+          font-size: 2rem;
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1rem;
+          padding: 0rem 1rem 1.5rem;
+        }
+      }
+    }
+  }
+}
+

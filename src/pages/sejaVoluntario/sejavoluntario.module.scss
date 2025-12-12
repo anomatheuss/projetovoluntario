@@ -1,0 +1,263 @@
+.whitebox {
+  width: 100%;
+
+  .maintitle {
+    padding: 2rem 2rem 0.5rem;
+
+    h1 {
+      color: black;
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      width: auto;
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-top: 1rem;
+      color: black;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      padding: 1.5rem 1rem 0.5rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .maincards {
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0.5rem 1rem 1rem;
+    margin: 0;
+
+    .card {
+      flex: 1;
+      width: auto;
+      height: 157px;
+      border: 1px solid black;
+      border-radius: 14px;
+      text-align: center;
+      margin-bottom: 1rem;
+
+      h2 {
+        font-size: 1.6rem;
+        color: black;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: black;
+        width: auto;
+        padding: 0rem 2rem 2rem;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0.5rem 1rem 1rem;
+
+      .card {
+        width: 100%;
+        height: auto;
+        min-height: 140px;
+        margin-bottom: 0;
+
+        h2 {
+          font-size: 1.3rem;
+          margin-top: 1.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+          padding: 0rem 1.5rem 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.formSection {
+  background-color: #00745a;
+  padding: 4rem 8rem 8rem;
+
+  .whitebox {
+    background-color: white;
+    border-radius: 16px;
+    
+    h2 {
+      font-size: 1.3rem;
+      padding: 2rem;
+      font-weight: 700;
+    }
+    
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 2rem;
+    }
+    
+    .boxname {
+      display: flex;
+      justify-content: space-evenly;
+
+      input {
+        border-radius: 10px;
+        width: 50%;
+        margin: 1rem;
+        height: 62px;
+        border: 1px solid black;
+        padding: 1rem;
+      }
+    }
+    
+    .boxphone {
+      display: flex;
+      justify-content: center;
+      
+      input {
+        border-radius: 10px;
+        width: 100%;
+        margin: 1rem;
+        height: 62px;
+        border: 1px solid black;
+        padding: 1rem;
+      }
+    }
+    
+    h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 1rem;
+    }
+    
+    .boxvolunteer {
+      input {
+        width: 97%;
+        margin: 1rem;
+        border-radius: 10px;
+        height: 182px;
+        border: solid 1px black;
+        padding: 2rem 2rem 12rem;
+      }
+    }
+    
+    p {
+      width: 97%;
+      font-size: 1rem;
+      text-align: center;
+      margin-left: 2rem;
+    }
+    
+    .mainbtn {
+      display: flex;
+      justify-content: center;
+      
+      .boxbtn {
+        background-color: #00745a;
+        color: white;
+        border-radius: 11px;
+        border: #00745a;
+        height: 50px;
+        font-size: 1rem;
+        width: 15%;
+        margin: 3rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #00523f;
+          transform: translateY(-3px);
+          box-shadow: 0 6px 20px rgba(0, 116, 90, 0.4);
+        }
+
+        &:active {
+          transform: translateY(-1px);
+          box-shadow: 0 3px 10px rgba(0, 116, 90, 0.4);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+
+    .whitebox {
+      h2 {
+        font-size: 1.1rem;
+        padding: 1.5rem 1rem;
+      }
+
+      h3 {
+        font-size: 0.9rem;
+        padding: 1rem;
+      }
+
+      .boxname {
+        flex-direction: column;
+        
+        input {
+          width: calc(100% - 2rem);
+          margin: 0.5rem 1rem;
+          height: 50px;
+          padding: 0.8rem;
+        }
+      }
+
+      .boxphone {
+        input {
+          width: calc(100% - 2rem);
+          margin: 0.5rem 1rem;
+          height: 50px;
+          padding: 0.8rem;
+        }
+      }
+
+      h4 {
+        font-size: 0.9rem;
+        padding: 1rem;
+      }
+
+      .boxvolunteer {
+        input {
+          width: calc(100% - 2rem);
+          margin: 0.5rem 1rem;
+          height: 150px;
+          padding: 1rem;
+        }
+      }
+
+      p {
+        width: calc(100% - 2rem);
+        font-size: 0.9rem;
+        margin: 0.5rem 1rem;
+      }
+
+      .mainbtn {
+        .boxbtn {
+          width: 60%;
+          margin: 2rem auto;
+          height: 48px;
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+}
+
